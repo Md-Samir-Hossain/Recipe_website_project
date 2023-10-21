@@ -9,7 +9,7 @@
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .navcontainer{
-    height: 50px;
+    height: 3.13rem;
     width: 100%;
     /* background-color: rgb(39, 122, 218); */
     background: rgb(2,0,36);
@@ -25,13 +25,14 @@
 }
 #navLogo{
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
 }
 #navItems{
     display: flex;
-    gap: 20px;
+    gap: 1.2rem;
 }
-a{
+#navItems a{
     text-decoration: none;
     color: white;
 }
@@ -41,7 +42,7 @@ a{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     text-align: center;
     width: 100%;
-    min-height: 20px;
+    min-height: 1.2rem;
 }
 .footerBox p {
     color: white;
@@ -58,36 +59,41 @@ a{
 .items{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 3rem;
+    overflow: hidden;
 }
 .Rightbox{
     position: relative;
-    overflow: hidden;
     display: flex;
+    align-items: center;
 }
-.Rightbox{
+.Rightbox img{
+    height: 20rem;
+    width: 14rem;
     box-shadow: 0 0 2px;
     border-radius: 10px;
+    overflow: hidden;
     transition: all 0.3s linear 0s;
 }
-.Rightbox:hover{
+.Rightbox:hover img{
     transform: scale(1.1);
     box-shadow: 0 0 10px;
 }
 .Rightbox .overlay{
     position: absolute;
-    background-color: rgba(49, 43, 43, 0.648);
-    height: 100%;
-    width: 100%;
+    background-color: rgba(49, 43, 43, 0.447);
+    height: 20rem;
+    width: 14rem;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    /* transition: all 0.3s linear 0s; */
+    transition: all 0.3s linear 0s;
 }
 .Rightbox:hover .overlay{
     opacity: 1;
+    transform: scale(1.1);
 }
 .Rightbox .overlay span{
     color: white;
@@ -96,7 +102,7 @@ a{
 .Leftbox{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.2rem;
     margin: 10px;
 }
 .Leftbox h2{
@@ -104,4 +110,51 @@ a{
 }
 .ingbox{
     font-size: 1.2rem;
+}.recipebox{
+    font-size: 1rem;
+}
+
+
+@media (max-width: 800px){
+    .contentBox{
+        width: 90%;
+    }
+}
+@media (max-width: 590px){
+    .contentBox{
+        width: 95%;
+    }
+    .items{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Leftbox h2{
+        font-size: 1.2rem;
+    }
+    .ingbox,.recipebox{
+        font-size: 0.8rem;
+    }
+    #title{
+        /* font-size: 1.8rem; */
+        text-align: center;
+    }
+    .items{
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 550px){
+    #navList{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0px;
+    }
+    #navItems{
+        font-size: 0.5rem;
+    }
+    .footerBox p {
+        font-size: 0.5rem;
+        padding: 3px;
+    }
 }
