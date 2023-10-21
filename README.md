@@ -6,4 +6,3 @@ I have also incorporated media queries to ensure that the design is responsive a
 
 This is a basic webpage design created using HTML and CSS.
 The project demonstrates the use of flexbox, positioning, gradients, borders, box shadows, transforms, and transition properties to create an engaging webpage design.
-<img width="260" alt="Screenshot 2023-10-21 170317" src="https://github.com/Md-Samir-Hossain/Recipe_website_project/assets/148366980/572b6546-933b-4e38-a7e9-651dbe4c5804">
